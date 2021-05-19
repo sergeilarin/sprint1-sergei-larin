@@ -1,0 +1,7 @@
+.board td {
+    background: rgb(169, 204, 14);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: 0.5s;
+}
