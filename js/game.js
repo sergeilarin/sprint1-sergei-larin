@@ -162,7 +162,7 @@ function checkWin() {
     if (gGame.markedCount === gLevel.mines && gGame.shownCount === shownCells) {
         var elBtn = document.querySelector('.face, button')
         elBtn.innerText = WIN_FASE
-
+        gGame.isOn = false
     }
 }
 
@@ -197,7 +197,7 @@ function setTimer() {
 function restart() {
     console.log('hi');
     numLives()
-    
+
     var elBtn = document.querySelector('.face, button')
     elBtn.innerText = FACE1
     gGame.isOn = true
@@ -209,11 +209,11 @@ function restart() {
 
 function numLives() {
     if (gLevel.mines > 3) {
-        gGame.lives=3
+        gGame.lives = 3
         var elSpan = document.querySelector('h2 span')
         elSpan.innerText = LIVE + LIVE + LIVE
     } else if (gLevel.mines < 3) {
-        gGame.lives=2
+        gGame.lives = 2
         var elSpan = document.querySelector('h2 span')
         elSpan.innerText = LIVE + LIVE
     }
