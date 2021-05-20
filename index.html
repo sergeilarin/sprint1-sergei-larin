@@ -12,19 +12,25 @@
 <body onload="initGame()">
     <h1>Minesweeper</h1>
 
-    <button>🙂</button>
-    <h2> Timer:<span>000</span></h2>
+    <button class="button1" onclick="restart()">🙂</button>
 
+    <div class="timer">
+        <span>0</span>
+    </div>
+    <h2>
+        <span class="life">❤️❤️</span>
+    </h2>
 
     <div>
-        <button onclick="getDifficulty(4)">Beginner</button>
-        <button onclick="getDifficulty(8)">Medium</button>
-        <button onclick="getDifficulty(12)">Expert</button>
+        <button class="button2" onclick="getDifficulty(4)">Beginner</button>
+        <button class="button3" onclick="getDifficulty(8)">Medium</button>
+        <button class="button4" onclick="getDifficulty(12)">Expert</button>
     </div>
-    <table>
+    <table border="5" cellpadding="10">
         <tbody class="board"></tbody>
     </table>
     <script src="js/game.js"></script>
+    <footer>Sergei Larin</footer>
 </body>
 
 </html>

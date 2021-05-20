@@ -1,27 +1,63 @@
 body{
+    background-color: darkcyan;
     text-align: center;
 }
+
 h1{
-color: green;
+    font-family: 'Courier New', Courier, monospace;
+color: rgb(31, 9, 155);
+}
+.button1{
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; 
+}
+.button2{
+    font-weight: bolder;
+    background-color: #4CAF50;
+    font-size: 12px;
+    border-radius: 12px;
+}
+.button3{
+    font-weight: bolder;
+    background-color: #008CBA;
+    font-size: 15px;
+    border-radius: 12px;
+}
+.button4{
+    font-weight: bolder;
+    background-color: #f44336;
+    font-size: 18px;
+    border-radius: 12px;
 }
 
+button{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
-table{
+table {
     margin: auto;
     margin-top: 20px;
 }
 
-
 .board td {
     background: rgb(169, 204, 14);
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     text-align: center;
     transition: 0.5s;
+
+}
+footer {
+    font-size: larger;
+    font-family: cursive;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: black;
 }
 
-button{
-    background-color: darkorange;
-    color: darkblue;
-    cursor: pointer;
-}
