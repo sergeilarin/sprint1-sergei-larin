@@ -269,8 +269,6 @@ function checkGameOver() {
 function restart() {
     var elSpan = document.querySelector('div span')
     elSpan.innerText = 0
-    // var elSpans = document.querySelector('.hint, span')
-    // elSpans.innerText = HINT
     numLives()
     clearInterval(gTimer)
     var elBtnRestart = document.querySelector('.button1')
