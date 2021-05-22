@@ -1,55 +1,103 @@
 body{
-    background-color: darkcyan;
+    background-color: rgb(149, 223, 223);
     text-align: center;
 }
 
 h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-family: 'Courier New', Courier, monospace;
-color: rgb(31, 9, 155);
+    color: rgb(31, 9, 155);
 }
 .button1{
+    font-size: 30px;
+    height: 2em;
+    width: 2em; ;
     border-radius: 50%;
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50; 
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #4CAF50;
+    cursor: pointer;
+}
+.timer span{
+    font-family: 'Changa One', cursive;
+    text-align: center;
+    font-size: 20px;
+    
+}
+h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+h3 span{
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .button2{
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 10px #888888;
     font-weight: bolder;
     background-color: #4CAF50;
     font-size: 12px;
     border-radius: 12px;
+    cursor: pointer;
 }
 .button3{
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 10px #888888;
     font-weight: bolder;
     background-color: #008CBA;
     font-size: 15px;
     border-radius: 12px;
+    cursor: pointer;
 }
 .button4{
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 10px #888888;
     font-weight: bolder;
     background-color: #f44336;
     font-size: 18px;
     border-radius: 12px;
-}
-
-button{
     cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 table {
     margin: auto;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
-.board td {
+.board {
     background: rgb(169, 204, 14);
-    width: 25px;
-    height: 25px;
+    width: 14px;
+    height: 14px;
     text-align: center;
     transition: 0.5s;
 
 }
+td{
+    font-weight: bolder;
+    font-size: 10px;
+    background: rgb(84, 100, 12);
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    transition: 0.5s;
+}
+.shown{
+    background: rgb(169, 204, 14);
+}
+
 footer {
     font-size: larger;
     font-family: cursive;

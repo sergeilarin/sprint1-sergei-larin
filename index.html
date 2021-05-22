@@ -17,14 +17,19 @@
     <div class="timer">
         <span>0</span>
     </div>
-    <h2>
+    <!-- <h3>
+        <span class="hint" onclick="revealCells(this)">❓</span>
+        <span class="hint" onclick="revealCells(this)">❓</span>
+        <span class="hint" onclick="revealCells(this)">❓</span>
+    </h3> -->
+    <h2> 
         <span class="life">❤️❤️</span>
     </h2>
 
     <div>
-        <button class="button2" onclick="getDifficulty(4)">Beginner</button>
-        <button class="button3" onclick="getDifficulty(8)">Medium</button>
-        <button class="button4" onclick="getDifficulty(12)">Expert</button>
+        <button class="button2" onclick="getDifficulty(4,2), restart()">Beginner</button>
+        <button class="button3" onclick="getDifficulty(8,12), restart()">Medium</button>
+        <button class="button4" onclick="getDifficulty(12,30), restart()">Expert</button>
     </div>
     <table border="5" cellpadding="10">
         <tbody class="board"></tbody>
